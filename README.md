@@ -3,6 +3,7 @@
 ## Números:
 
 1. Escribe una función que tome dos números como argumentos y devuelva su suma.
+
 2. Escribe una función que tome dos números como argumentos y devuelva su resta.
 3. Escribe una función que tome dos números como argumentos y devuelva su producto.
 4. Escribe una función que tome dos números como argumentos y devuelva su división.
