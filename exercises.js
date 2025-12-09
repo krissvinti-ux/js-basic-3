@@ -103,17 +103,97 @@ function invertida (texto){
     }
 // 7. Escribe una función que tome una cadena de texto y un carácter como argumentos, y devuelva la cantidad de veces que el carácter aparece en la cadena.
 
-function invertida (texto, caracter){
+function invertida (texto, caracter){    
     let guardardato =0;
     for(let index =0; index< texto.length; index++){
         if( texto [index]=== caracter){
-guardardato++;
-}
+            guardardato++;
+        }
     }
-return guardardato;    
+    return guardardato;    
     }
 // 8. Escribe una función que tome una cadena de texto como argumento y devuelva la misma cadena sin espacios en blanco.
+function quitarespacios (a){
+    let resultado=texto.trim();
+    return resultado;
+    }
 
 // 9. Escribe una función que tome una cadena de texto como argumento y devuelva true si es un palíndromo (se lee igual de izquierda a derecha y de derecha a izquierda), o false si no lo es.
 
+function espalindromo (texto) {
+    textoReverso = texto.reverse();
+    if(textoReverso === texto){
+
+        return true;
+    }
+    else
+    {
+        return false;
+    }  
+}
 // 10. Escribe una función que tome una cadena de texto como argumento y devuelva la misma cadena con la primera letra de cada palabra en mayúscula.
+function capitalizarPalabras(texto) {
+  let palabras = texto.split(" ");
+  for (let i = 0; i < palabras.length; i++) {
+   
+    palabras[i] = palabras[i].charAt(0).toUpperCase() + palabras[i].slice(1);
+  }
+  return palabras.join(" "); 
+}
+
+
+// 1. Escribe una función que tome un array de números como argumento y devuelva la suma de todos sus elementos.
+
+function sumarArray(numeros) {
+  let suma = 0; 
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i]; 
+  }
+  return suma;
+}
+
+// 2. Escribe una función que tome un array de números como argumento y devuelva el promedio de todos sus elementos.
+function sumaarray (numeros){
+    let suma=0
+    for (let i=0; i < numeros.length; i++){
+        suma= suma+numeros[i]
+}
+let division= suma/numeros.length
+return division
+}
+
+// 3. Escribe una función que tome un array de números como argumento y devuelva el array ordenado de forma ascendente.
+function ordenar (numeros){
+
+    let orden= numeros.sort()
+    return orden
+    }
+
+// 4. Escribe una función que tome un array de números y un número como argumentos, y devuelva un nuevo array con los elementos mayores al número dado.
+function nuevo (numeros, numero){
+let mayores= []
+    for (let i=0; i< numeros.length; i++){
+if (numero < numeros [i])
+    mayores.push (numeros [i])
+    }
+return mayores
+}
+
+// 5. Escribe una función que tome dos arrays como argumentos y devuelva un nuevo array con todos los elementos de ambos arrays.
+
+// 6. Escribe una función que tome un array de números como argumento y devuelva el número máximo dentro del array.
+
+
+
+
+
+// 7. Escribe una función que tome un array de números como argumento y devuelva el número mínimo dentro del array.
+
+
+// 8. Escribe una función que tome un array y un elemento como argumentos, y devuelva la cantidad de veces que el elemento aparece en el array.
+
+
+// 9. Escribe una función que tome un array como argumento y devuelva un nuevo array sin elementos duplicados.
+
+
+// 10. Escribe una función que tome un array como argumento y devuelva un nuevo array con los elementos en orden inverso.
